@@ -3,32 +3,87 @@
   <head>
     <title>About Page</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <style>
+      /* Center the navigation links on larger screens */
+      @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav {
+          justify-content: center;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/AboutPage.html" aria-current="page">About Page</a>
-      <a href="/ContactPage.html">Contact Me</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/AboutPage.html">About Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link home-button" href="/ContactPage.html"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main>
-      <header>
-        <h1>About Page</h1>
-      </header>
-      <section>
-        <p>
-          I plan to expand this page later as I decide what this is for! Here
-          are some things to look forward to!
-        </p>
-        <ul>
-          <li>Some of my own CSS eventually</li>
-          <li>Java Script implementation</li>
-          <li>Check out <a _blank href= https://chat.openai.com> this cool guy</a> if you want some ideas in the meantime.</li>
-        </ul>
-      </section>
+
+    <main class="container mt-4">
+      <div class="jumbotron">
+        <header>
+          <h1 class="display-4">About Page</h1>
+        </header>
+        <section>
+          <p class="lead">
+            I plan to expand this page later as I decide what this is for! Here
+            are some things to look forward to!
+          </p>
+          <ul>
+            <li>
+              I'm still experimenting but I've now added some CSS and bootstrap!
+              Hopefully things look a little better!
+            </li>
+            <li>JavaScript implementation</li>
+            <li>
+              Check out
+              <a target="_blank" href="https://chat.openai.com"
+                >this cool guy</a
+              >
+              if you want some ideas in the meantime.
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
