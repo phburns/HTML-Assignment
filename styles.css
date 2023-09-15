@@ -132,7 +132,7 @@ nav .navbar-nav {
   justify-content: center;
 }
 
-/* Center the navigation links on larger screens */
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     justify-content: center;
