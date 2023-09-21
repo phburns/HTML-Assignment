@@ -8,8 +8,10 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,6 +43,9 @@
                 >Contact Me</a
               >
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/Calculator.html">ROI Calculator</a>
+          </li>
           </ul>
         </div>
       </div>
@@ -55,7 +60,7 @@
           <header>
             <h2>My contact information is just below!</h2>
           </header>
-          <table class="table table-striped">
+          <table class="table table-striped" id="contact-table">
             <thead class="thead-dark">
               <tr>
                 <th colspan="2">Contact Information</th>
@@ -72,11 +77,15 @@
               </tr>
             </tbody>
           </table>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="toggle-contact-table"
+          >
+            Close Table
+          </button>
         </section>
       </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

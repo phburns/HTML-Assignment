@@ -45,7 +45,6 @@ h1 {
   font-size: 1.5rem;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -68,7 +67,6 @@ th {
   background-color: #333;
   color: white;
 }
-
 
 table.table {
   background-color: #fff;
@@ -94,7 +92,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
-  gap: 1rem; 
+  gap: 1rem;
   border-bottom: solid 1px #aaa;
   background-color: #eee;
 }
@@ -110,7 +108,7 @@ nav {
 
 nav a {
   display: inline-block;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   border: solid 1px #aaa;
   text-align: center;
@@ -132,11 +130,8 @@ nav .navbar-nav {
   justify-content: center;
 }
 
-
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     justify-content: center;
   }
 }
-
-

@@ -8,7 +8,11 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
     <style>
       @media (min-width: 992px) {
         .navbar-expand-lg .navbar-nav {
@@ -46,6 +50,9 @@
                 >Contact Me</a
               >
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/Calculator.html">ROI Calculator</a>
+          </li>
           </ul>
         </div>
       </div>
@@ -61,26 +68,28 @@
             I plan to expand this page later as I decide what this is for! Here
             are some things to look forward to!
           </p>
-          <ul>
+          <ul id="about-list">
             <li>
               I'm still experimenting but I've now added some CSS and bootstrap!
               Hopefully things look a little better!
             </li>
-            <li>JavaScript implementation</li>
             <li>
-              Check out
+              I've now also implemented a bit of javascript with these buttons
+              on the different pages! I think it works well! Check out my <a href="/Calculator.html"> ROI Calculator</a> now too!
+            </li>
+            <li>
+              I've updated the page now but still make sure to check out
               <a target="_blank" href="https://chat.openai.com"
                 >this cool guy</a
               >
-              if you want some ideas in the meantime.
+              if you want some more ideas!
             </li>
           </ul>
+          <button type="button" class="btn btn-primary" id="toggle-about-list">
+            Close List
+          </button>
         </section>
       </div>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
